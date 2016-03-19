@@ -1,0 +1,112 @@
+
+body {
+    margin:0;
+    padding:0;
+
+}/* CSS Document */
+
+#Holder {
+    width:900px;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:21px;
+    margin-bottom:21px
+
+}
+#Header {
+    height:53px;
+    background-image:url(../../images/MCe.gif);
+    background-repeat:no-repeat;
+    margin-bottom:5px
+}
+#NavBar  {
+    height:60px;
+    background-color:rgb(242, 242, 242);
+
+}
+#Content {
+    height:auto;
+    clear:both;
+    overflow:auto;
+}
+#PageHeading {
+    height:auto;
+    padding:11px;
+}
+#ContentLeft {
+    width:280px;
+    float:left;
+    padding-top:11px;
+    padding-left:11px;
+}
+}
+#Footer {
+    height:100px;
+}
+h1 {
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#666;
+    font-weight:lighter;
+}
+h2 {
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    color:#999;
+}
+h6 {
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    font-size:14px;
+    color:#333;
+}
+.StyleTxtField {
+    border:1px solid #666;
+    border-radius:6px;
+    width:190px;
+    height:30px;
+}
+
+#Sign
+
+{
+    width: 350px;
+    height: 300px;
+    border: 1px solid #bbb;
+    background-color: rgb(242,242,242);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+
+
+#LoginForm input, #Sign input
+{
+    margin-bottom: 20px;
+    padding: 6px;
+    width: 300px;
+}
+
+
+input[name="reset"],[name="submit"] {
+
+    width: auto !important;
+
+}
+
+#LoginForm
+
+{
+    width: 320px;
+    height: 150px;
+    border: 1px solid #bbb;
+    background-color: rgb(242,242,242);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 0 auto;
+}
+

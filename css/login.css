@@ -1,0 +1,47 @@
+body
+    {
+      font-family:verdana;
+      font-size: 15px;
+    }
+
+div#back_glob
+    {
+      background-color:white;
+      border:1px steelblue;
+      width:350px;
+      margin:0 auto;
+    }
+
+input
+    {
+      display:block;
+      margin:15px;
+    }
+
+div#back_header
+    {
+      background-color: steelblue;
+      text-align:center;
+      font-size:22px;
+      font-weight:bold;
+      color:white;
+    }
+
+input[type=text],
+input[type=password]
+    {
+      font-size:15px;
+      padding:5px;
+      border-radius:3px;
+      border: 1px solid #dddddd;
+    }
+
+input[type=submit]
+    {
+      background-color: steelblue;
+      padding:5px 10px 5px 10px;
+      border-radus:5px;
+      border: 1px solid #dddddd;
+      color:white;
+      font-weight:bold;
+    }
