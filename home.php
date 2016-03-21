@@ -14,7 +14,7 @@
                     <nav>
                         <ul>
                             <li><a href="logout.php">Logout</a></li>
-                            <li><a href="#">Register</a></li>
+                            <li><a href="UploadBug.php">BugUpload</a></li>
                             <li><a href="#">Forgot Password</a></li>
                         </ul>
                     </nav>
