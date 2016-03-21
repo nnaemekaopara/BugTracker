@@ -13,9 +13,9 @@
                 <div id="NavBar">
                     <nav>
                         <ul>
-                            <li><a href="index.html">Login</a></li>
+                            <li><a href="index.php">Login</a></li>
                             <li><a href="#">Register</a></li>
-                            <li><a href="#">Forgot Password</a></li>
+                            <li><a href="Forgotpassword.php">Forgot Password</a></li>
                         </ul>
                     </nav>
                 </div>
