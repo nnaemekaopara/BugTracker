@@ -8,7 +8,7 @@ session_start();
         $username = strip_tags($_POST["username"]);
         $password = strip_tags($_POST["password"]);
 
-        if ($username == $dbUsername && $password == $dbPassword) {
+        if ($username == $dbusername && $password == $dbpassword) {
             //Set session variables
             $_SESSION['username'] = $username;
             $_SESSION['id'] = $uid;

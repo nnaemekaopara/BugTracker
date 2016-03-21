@@ -14,8 +14,8 @@
             <div id="NavBar">
                 <nav>
                     <ul>
-                        <li><a href="index.php">Login</a></li>
-                        <li><a href="Sign%20Up.php">Register</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="SignUp.php">Register</a></li>
                         <li><a href="Forgotpassword.php">Forgot Password</a></li>
                     </ul>
                 </nav>
@@ -35,7 +35,7 @@
                     required type="text" placeholder="Username" />
             <input id="password" name="password" required
                    type="password" placeholder="Password"/>
-            <h6>You don't have an account?<a href="Sign%20Up.php">Sign Up!</a></h6>
+            <h6>You don't have an account?<a href="SignUp.php">Sign Up!</a></h6>
             <input type="submit" name="submit" value = "Login"/>
         </form>
     </body>
