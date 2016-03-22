@@ -21,7 +21,7 @@
                 </nav>
             </div>
             <div id="Content">
-                <div id="PageHeading">
+                <!--div id="PageHeading">
                     <?php
 
                     if (loggedin()) {
@@ -30,7 +30,7 @@
                         echo '';
                     }
                     ?>
-                </div>
+                </div> -->
                 <div id="ContentLeft">
                     <h2></h2>
                 </div>

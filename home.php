@@ -23,22 +23,6 @@
                     <div id="PageHeading">
                         <h1>Welcome <?php echo $username;?></h1>
                     </div>
-                    <?php
-                    $sql = "select bugtracker FROM <Revenant>.information_schema.tables";
-
-                    $sql = "SELECT id,bugtitle, bugdescription, dateposted,datefixed, issue, comments suggestions FROM bugtracker ";
-                    $result = $conn->query($sql);
-
-                    if ($result->num_rows > 0) {
-                        // output data of each row
-                        while($row = $result->fetch_assoc()) {
-                            echo "id: " . $row["id"]. "" . $row["bugtitle"]. " " . $row["bugdescription"]." " . $row["dateposted"]." " . $row["datefixed"]." " . $row["issue"]." " . $row["comment"]." " . $row["suggestion"]. "<br>";
-                        }
-                    } else {
-                        echo "0 results";
-                    }
-                    $conn->close();
-                    ?>
                 </div>
             </div>
         </body>
