@@ -21,12 +21,10 @@
                 </div>
                 <div id="Content">
                     <div id="PageHeading">
-                        <h1>Welcome <?echo $username = $_SESSION['username'] ?></h1>
-                    </div>
-                    <div id="ContentLeft">
-                        <h2> Allzeit Bereit!</h2>
+                        <h1>Welcome <?php echo $username;?></h1>
                     </div>
                     <?php
+                    $sql = "select bugtracker FROM <Revenant>.information_schema.tables";
 
                     $sql = "SELECT id,bugtitle, bugdescription, dateposted,datefixed, issue, comments suggestions FROM bugtracker ";
                     $result = $conn->query($sql);

@@ -1,22 +1,51 @@
- <?php
-session_start();
-    require("connection.php");
+<?php
+include('login.php'); // Include Login Script
 
-    if($_POST['username']) {
-
-
-        $username = strip_tags($_POST["username"]);
-        $password = strip_tags($_POST["password"]);
-
-        if ($username == $dbusername && $password == $dbpassword) {
-            //Set session variables
-            $_SESSION['username'] = $username;
-            $_SESSION['id'] = $uid;
-            //Now direct to users feed
-            header("Location: home.php");
-        }else {
-            echo "<h2> Bros/Sista abeg this your username or password get as e be.
-            <br /> Abeg try am again.</h2>";
-        }
-    }
+if ((isset($_SESSION['username']) != ''))
+{
+    header('Location: home.php');
+}
 ?>
+
+<!doctype html>
+ <html>
+     <head>
+         <meta charset="utf-8">
+         <title>Login</title>
+         <link rel="stylesheet" href="css/design.css" type="text/css" />
+         <link rel="stylesheet" href="css/menu.css" type="text/css" />
+     </head>
+
+     <body>
+         <div id="Holder">
+             <div id="Header"></div>
+             <div id="NavBar">
+                 <nav>
+                     <ul>
+                         <li><a href="#">Login</a></li>
+                         <li><a href="SignUp.php">Register</a></li>
+                         <li><a href="Forgotpassword.php">Forgot Password</a></li>
+                     </ul>
+                 </nav>
+             </div>
+             <div id="Content">
+                 <div id="PageHeading">
+                     <h1>Login Here</h1>
+                 </div>
+                 <div id="ContentLeft">
+                     <h2> Allzeit Bereit!</h2>
+                 </div>
+             </div>
+         </div>
+
+         <form id="LoginForm" autocomplete="off" method="post" action="login.php">
+             <input  id = "username"  name="username" title="Username"
+                     required type="text" placeholder="Username" />
+             <input id="password" name="password" required
+                    type="password" placeholder="Password"/>
+             <h6>You don't have an account?<a href="SignUp.php">Sign Up!</a></h6>
+             <input type="submit" name="submit" value = "Login"/>
+         </form>
+         <div class="error"><?php echo $error;?></div>
+     </body>
+ </html>

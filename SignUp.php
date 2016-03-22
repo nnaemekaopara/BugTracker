@@ -1,3 +1,9 @@
+<?php
+
+include("connection.php");
+include("submit.php");
+
+?>
 <!doctype html>
     <html>
         <head>
@@ -29,20 +35,27 @@
 
              <form id="Sign" autocomplete="off">
 
-                <input  id = "username"  name="username" title="Choose a Username"
-                        required type="text" placeholder="Username" />
+                 <table>
+                     <tr>
+                         <td>Username:</td>
+                         <td><input type="text" placeholder="Username" name="username"size="20"autofocus required/></td>
+                     </tr>
 
-                <input id = "email" name="email" required
-                       type="email" placeholder="Email@address.com"/>
+                     <tr>
+                         <td>Email:</td>
+                         <td><input type="email" placeholder="Email Address" name="email"size="20" required/></td>
+                     </tr>
 
-                <input id = phoneno" name="phoneno" required
-                       type="tel" placeholder="+447-000-000-000"/>
+                     <tr>
+                         <td>Password:</td>
+                         <td><input type="password"placeholder="Password" name="password"size="25" required/></td>
+                     </tr>
 
-                <input id="password" name="password" required
-                       type="password" placeholder="Password"/>
-
-                <input id="passwordconfirm" name="passwordconfirm" required
-                       type="password" placeholder="Confirm Password"/>
+                     <tr>
+                         <td>Tel/Mobile:</td>
+                         <td><input type="tel" placeholder="Mobile Number" name="phone"size="11"required/></td>
+                     </tr>
+                 </table>
                 <h6>You already have an account?<a href="login.php">Click Here</a></h6>
                 <input type="reset" name="reset" value="Reset"/>
                 <input type="submit" name="submit" value="Sumbit" />
