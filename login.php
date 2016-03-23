@@ -4,7 +4,7 @@ include("connection.php"); //Establishing connection with our database
 
   if(empty($_POST["username"]) || empty($_POST["password"]))
         {
-            $error = "Both fields are required.";
+            $echo = "Both fields are required.";
         } else
         {
             // Define $username and $password
@@ -14,6 +14,7 @@ include("connection.php"); //Establishing connection with our database
 
             //Check username and password from database
             $sql="SELECT uid FROM 'users' WHERE username='$username' and password='$password'";
+            $sql2="insert into 'users' values '$username','$password'";
             $result=mysqli_query($db,$sql);
 
             //If username and password exist in our database then create a session.
