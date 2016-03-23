@@ -8,8 +8,8 @@ include("connection.php");
         <head>
             <meta charset="utf-8">
             <title>Sign Up</title>
-            <link rel="stylesheet" href="../css/design.css" type="text/css" />
-            <link rel="stylesheet" href="../css/menu.css" type="text/css" />
+            <link rel="stylesheet" href="css/design.css" type="text/css" />
+            <link rel="stylesheet" href="css/menu.css" type="text/css" />
         </head>
 
         <body>
@@ -18,9 +18,9 @@ include("connection.php");
                 <div id="NavBar">
                     <nav>
                         <ul>
-                            <li><a href="../index.php">Login</a></li>
+                            <li><a href="index.php">Login</a></li>
                             <li><a href="#">Register</a></li>
-                            <li><a href="../Forgotpassword.php">Forgot Password</a></li>
+                            <li><a href="Forgotpassword.php">Forgot Password</a></li>
                         </ul>
                     </nav>
                 </div>

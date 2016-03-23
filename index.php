@@ -22,7 +22,7 @@ if (isset($_SESSION['username']) )
                  <nav>
                      <ul>
                          <li><a href="#">Login</a></li>
-                         <li><a href="Register/Register.php">Register</a></li>
+                         <li><a href="Register.php">Register</a></li>
                          <li><a href="Forgotpassword.php">Forgot Password</a></li>
                      </ul>
                  </nav>
