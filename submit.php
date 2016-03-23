@@ -10,7 +10,6 @@ if(!empty($_POST['username']) && !empty($_POST['password'])
 
     $sql=mysqli_query("SELECT email FROM users WHERE email='$email'");
     $result=mysqli_query($db,$sql);
-    $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
     if(mysqli_num_rows($result) == 1)
     {
         $echo = "Sorry...This email already exists...";
