@@ -1,3 +1,6 @@
+<?php
+include("check.php");
+?>
 <!doctype html>
     <html>
         <head>
@@ -21,7 +24,7 @@
                 </div>
                 <div id="Content">
                     <div id="PageHeading">
-                        <h1>Welcome <?php echo $username;?></h1>
+                        <h1>Welcome <?php echo $login_user;?></h1>
                     </div>
                 </div>
             </div>

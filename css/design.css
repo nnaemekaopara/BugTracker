@@ -16,7 +16,7 @@ body {
 }
 #Header {
     height:53px;
-    background-image:url(../../images/MCe.gif);
+    background-image:url(../images/MCe.gif);
     background-repeat:no-repeat;
     margin-bottom:5px
 }
@@ -73,7 +73,7 @@ h6 {
 #Sign, #ForgPass
 
 {
-    width: 320px;
+    width: 330px;
     height: 290px;
     border: 1px solid #bbb;
     background-color: rgb(242,242,242);
@@ -88,7 +88,7 @@ h6 {
 {
     margin-bottom: 15px;
     padding: 6px;
-    width: 300px;
+    width: 290px;
 }
 
 
