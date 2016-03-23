@@ -10,13 +10,12 @@ include("connection.php"); //Establishing connection with our database
             // Define $username and $password
             $username=$_POST['username'];
             $password=$_POST['password'];
+            $name = 'emeka';
+            $pass = 'pass';
 
-
-            //Check username and password from database
-            $sql="SELECT uid FROM 'users' WHERE username='$username' and password='$password'";
-            $sql2="insert into 'users' values '$username','$password'";
+            $sql="SELECT uid FROM users WHERE username='$username' and password='$password'";
+            $sql2 = "insert into users values '$name','$pass'";
             $result=mysqli_query($db,$sql);
-
             //If username and password exist in our database then create a session.
             //Otherwise echo error.
 
