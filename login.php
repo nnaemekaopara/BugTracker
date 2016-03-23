@@ -8,7 +8,7 @@ include("connection.php"); //Establishing connection with our database
         } elseif(!empty($_POST['username']) && !empty($_POST['password']))
         {
             $username = mysqli_real_escape_string($_POST['username']);
-            $password = md5(mysqli_real_escape_string($_POST['password']));
+            $password = mysqli_real_escape_string($_POST['password']);
 
 
             //Check username and password from database
