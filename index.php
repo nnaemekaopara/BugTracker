@@ -1,7 +1,6 @@
 <?php
-include('login.php'); // Include Login Script
 
-if ((isset($_SESSION['username']) != ''))
+if (isset($_SESSION['username']) )
 {
     header('Location: home.php');
 }
