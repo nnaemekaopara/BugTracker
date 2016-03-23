@@ -1,4 +1,25 @@
+<?php
+$name = $_FILES['bug']['name']; //check functionality
+//$size = $_FILES['bug']['name']; check the size of the file
+//$type = $_FILES['bug']['name']; check the type
 
+echo $tmp_name = $_FILES['bug']['tmp_name'];
+
+
+
+if (isset($name)) {
+  if (! empty($name)) {
+
+      $location = 'bug/';
+
+      if (move_uploaded_file($tmp_name));
+      echo 'Uploaded!';
+
+  }  else{
+      echo 'Please upload a bug Here';
+  }
+}
+?>
 
 <!doctype html>
  <html>
@@ -21,23 +42,17 @@
                 </nav>
             </div>
             <div id="Content">
-                <!--div id="PageHeading">
-                    <?php
-
-                    if (loggedin()) {
-                        echo 'Welcome! [Firstname] [Lastame]';
-                    } else if (!loggedin()) {
-                        echo '';
-                    }
-                    ?>
-                </div> -->
+                <div id="PageHeading">
+                    Go ahead
+                </div>
                 <div id="ContentLeft">
                     <h2></h2>
                 </div>
             </div>
         </div>
 
-        <form id="Bug" autocomplete="off ">
+        <form id="Bug" action="UploadBug.php" method="post"
+              enctype="multipart/form-data" autocomplete="off ">
 
             <input id="bugtitle" name="bugtitle" type="text"
                    placeholder="Bug Title" autofocus/>
@@ -46,10 +61,6 @@
              <textarea id="bugdescription" type="text" rows="6" cols="40"
              name="bugdescription" placeholder="Bug Description"/></textarea>
 
-            <!--<tr>
-                <td>User Reference </td>
-                <td><textarea type="text" rows="6" cols="40" name="User Reference"value=""/></textarea></td>
-            </tr> -->
             <br>
             Date Posted:<input id="dateposted" type="date"
                                name="dateposted"value="Date Posted" />
@@ -73,7 +84,7 @@
                 name="suggestions" placeholder="Suggestions"/>
             </textarea>
 
-            <input type="file" name="upload" value="Upload Bug"/>
+            <input type="file" name="bug" value="Upload Bug"/>
             <input type ="reset" name="reset" value="Reset"/>
             <input type="submit" name="btnSubmit" value="Submit"/>
         </form>

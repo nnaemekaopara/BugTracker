@@ -1,7 +1,6 @@
 <?php
 
 include("connection.php");
-include("submit.php");
 
 ?>
 <!doctype html>
@@ -33,7 +32,7 @@ include("submit.php");
                 </div>
              </div>
 
-             <form id="Sign" autocomplete="off">
+             <form id="Sign" action="submit.php" method="post" autocomplete="off">
                  <table>
                      <tr>
                          <td><input type="text" placeholder="Username" name="username"size="20"autofocus required/></td>
