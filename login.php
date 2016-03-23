@@ -7,8 +7,8 @@ include("connection.php"); //Establishing connection with our database
             $error = "Both fields are required.";
         } elseif(!empty($_POST['username']) && !empty($_POST['password']))
         {
-            $username = mysqli_real_escape_string($_POST['username']);
-            $password = mysqli_real_escape_string($_POST['password']);
+            $username = ($_POST['username']);
+            $password = md5($_POST['password']);
 
 
             //Check username and password from database
