@@ -5,11 +5,10 @@ include("connection.php"); //Establishing connection with our database
   if(empty($_POST["username"]) || empty($_POST["password"]))
         {
             $error = "Both fields are required.";
-        } else
+        } elseif(!empty($_POST['username']) && !empty($_POST['password']))
         {
-            // Define $username and $password
-            $username=$_POST['username'];
-            $password=$_POST['password'];
+            $username = mysqli_real_escape_string($_POST['username']);
+            $password = md5(mysqli_real_escape_string($_POST['password']));
 
 
             //Check username and password from database
@@ -25,7 +24,7 @@ include("connection.php"); //Establishing connection with our database
                 header("location: home.php"); // Redirecting To Other Page
             }else
             {
-                $error = "Incorrect username or password.";
+                echo " Incorrect username or password.";
             }
 
         }
