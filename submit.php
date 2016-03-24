@@ -1,12 +1,13 @@
 <?php
+include ("connection.php");
 
 if(!empty($_POST['username']) && !empty($_POST['password'])
     && !empty($_POST['password'])&& !empty($_POST['phone']))
 {
-    $username = ($_POST['username']);
-    $email = ($_POST['email']);
-    $password = md5($_POST['password']);
-    $phone = ($_POST['phone']);
+    $username = mysqli_real_escape_string($db, $_POST['username']);
+    $email = mysqli_real_escape_string($db, $_POST['email']);
+    $password = md5(mysqli_real_escape_string($db, $_POST['password']));
+    $phone = mysqli_real_escape_string($db, $_POST['phone']);
 
     $sql=mysqli_query("SELECT email FROM users WHERE email='$email'");
     $result=mysqli_query($db,$sql);
