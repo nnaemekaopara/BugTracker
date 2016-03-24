@@ -11,6 +11,7 @@ if(!empty($_POST['username']) && !empty($_POST['password'])
     $phone = mysqli_real_escape_string($db, $_POST['phone']);
 
     $sql=mysqli_query("SELECT email FROM users WHERE email='$email'");
+    $sql=mysqli_query("SELECT username FROM users WHERE username='$username'");
     $result=mysqli_query($db,$sql);
     if(mysqli_num_rows($result) == 1)
     {

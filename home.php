@@ -17,14 +17,24 @@ include("check.php");
                     <nav>
                         <ul>
                             <li><a href="logout.php">Logout</a></li>
-                            <li><a href="UploadBug.php">BugUpload</a></li>
-                            <li><a href="#">Forgot Password</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div id="Content">
                     <div id="PageHeading">
                         <h1>Welcome <?php echo $login_user;?></h1>
+                    </div>
+                    <div id="ContentLeft">
+                        <div id="Contentbar">
+                            <nav>
+                                <ul>
+                                    <li><a href="UploadBug.php">Upload Bug</a></li>
+                                    <li><a href="bugstatus.php">View Bugs</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div id="ContentRight">
                     </div>
                 </div>
             </div>

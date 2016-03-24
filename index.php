@@ -42,7 +42,7 @@ if (isset($_SESSION['username']) )
                      required type="text" placeholder="Username" />
              <input id="password" name="password" required
                     type="password" placeholder="Password"/>
-             <h6>You don't have an account?<a href="Register/Register.php">Sign Up!</a></h6>
+             <h6>You don't have an account?<a href="Register.php">Sign Up!</a></h6>
              <input type="submit" name="submit" value = "Login"/>
          </form>
          <div class="error"><?php echo $error;?></div>
