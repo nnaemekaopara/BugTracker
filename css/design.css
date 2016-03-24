@@ -116,19 +116,14 @@ input[name="reset"],[name="submit"] {
 
 {
     width: 500px;
-    height: 600px;
+    height: 370px;
     border: 1px solid #bbb;
     background-color: lightgray;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 20px;
     margin: 0 auto;
 }
 
-.dropzone {
-    width: 300px;
-    height:300px;
-    border:2px dashed #cccccc;
-    color: #ccc;
-    line-height: 300px;
-    text-align: center;
+input#bugsubmit{
+    border-radius: 8px;
 }

@@ -18,7 +18,7 @@
             </div>
             <div id="Content">
                 <div id="PageHeading">
-                    <h1>Upload Bug Here</h1>
+                    <center><h1>Upload Bug Here</h1></center>
                 </div>
                 <div id="ContentLeft">
                     <h2></h2>
@@ -29,23 +29,39 @@
         <form id="Bug" action="bugsubmit.php" method="post"
               enctype="multipart/form-data" autocomplete="off ">
 
-            <input id="bugtitle" name="bugtitle" type="text"
-                   placeholder="Bug Title" autofocus/>
+            <table>
+                <tr>
+                    <td>Bug Title:</td>
+                    <td><input id="bugtitle" name="bugtitle" type="text"
+                               placeholder="Bug Title" autofocus/></td>
+                </tr>
 
 
-            <textarea id="bugdescription" type="text" rows="6" cols="40"
-             name="bugdescription" placeholder="Bug Description"/></textarea>
+                <tr>
+                    <td>Bug Descrip:</td>
+                    <td><textarea id="bugdescription" type="text" rows="6" cols="40"
+                                  name="bugdescription" placeholder="Bug Description"/></textarea></td>
+                </tr>
 
+                <tr>
+                    <td>Date Posted:</td>
+                    <td><input id="dateposted" type="date"
+                               name="dateposted"value="Date Posted" /></td>
+                </tr>
+
+                <tr>
+                    <td>Comments: </td>
+                    <td><textarea id="comments" type="text"rows="5" cols="40"
+                                  name="comment" placeholder="Comment Here"/></textarea></td>
+                </tr>
+                <tr>
+                    <td>Upload Bug: </td>
+                    <td><input type="file" name="bug"></td>
+                </tr>
+
+            </table>
             <br>
-            Date Posted:<input id="dateposted" type="date"
-                               name="dateposted"value="Date Posted" />
-
-            <textarea id="comments" type="text"rows="5" cols="40"
-               name="comment" placeholder="Comment Here"/>
-            </textarea>
-
-            <input type="file" name="file">
-            <input type="submit" name="btnSubmit" value="Submit"/>
+            <center><input id ="bugsubmit" type="submit" name="btnSubmit" value="Submit"/></center>
         </form>
    </body>
 
