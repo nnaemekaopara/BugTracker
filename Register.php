@@ -50,7 +50,7 @@ include("connection.php");
                          <td><input type="tel" placeholder="Mobile Number" name="phone"size="11"required/></td>
                      </tr>
                  </table>
-                <h6>You already have an account?<a href="../login.php">Click Here</a></h6>
+                <h6>You already have an account?<a href="login.php">Click Here</a></h6>
                 <input type="reset" name="reset" value="Reset"/>
                 <input type="submit" name="submit" value="Sumbit" />
              </form>

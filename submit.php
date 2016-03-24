@@ -1,4 +1,5 @@
 <?php
+session_start();
 include ("connection.php");
 
 if(!empty($_POST['username']) && !empty($_POST['password'])
@@ -22,8 +23,7 @@ if(!empty($_POST['username']) && !empty($_POST['password'])
         if($registerquery)
         {
             echo  "<p>Thank You! you are now registered.</p>";
-            session_start();
-            $_SESSION['login']="1";
+            $_SESSION['username'] = $username;
             header("Location:home.php");
         }
         else
