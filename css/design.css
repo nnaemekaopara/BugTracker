@@ -1,9 +1,10 @@
-
+html{
+    background-color: transparent;
+}
 body {
     margin:0;
     padding:0;
-    background-image:url("../images/bug.gif") ;
-    background-color: transparent;
+
 
 }/* CSS Document */
 

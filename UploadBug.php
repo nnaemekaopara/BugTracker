@@ -9,6 +9,7 @@
 
    <body>
         <div id="Holder">
+            <div id="Header"></div>
             <div id="NavBar">
                 <nav>
                     <ul>

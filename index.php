@@ -5,6 +5,11 @@ if (isset($_SESSION['username']) )
     header('Location: home.php');
 }
 ?>
+<style>
+    html {
+        background-image:url("images/bug.gif") ;
+    }
+</style>
 
 <!doctype html>
  <html>

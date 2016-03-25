@@ -25,6 +25,7 @@ include("connection.php"); //Establishing connection with our database
             }else
             {
                 echo " Incorrect username or password.";
+                header("location: index.php");
             }
 
         }
