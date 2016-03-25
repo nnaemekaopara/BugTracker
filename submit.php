@@ -10,12 +10,14 @@ if(!empty($_POST['username']) && !empty($_POST['password'])
     $password = md5(mysqli_real_escape_string($db, $_POST['password']));
     $phone = mysqli_real_escape_string($db, $_POST['phone']);
 
-    $sql="SELECT email FROM users WHERE email= '$email'";
+    $sql="SELECT email FROM users WHERE email='$email'";
    // $sql1=mysqli_query("SELECT username FROM users WHERE username='$username'");
-    $result_email=mysqli_query($db,$sql);
+    $result_email = mysqli_query($db,$sql);
    // $result_username=mysqli_query($db,$sql1);
-    if(mysqli_num_rows($result_email) == 1)
+    if(mysqli_fetch_assoc($result_email) == 1)
     {
+        $email = $result_email['email'];
+        echo $email;
         header("location:Register.php");
         $echo = "Sorry...This email already exists...";
 
