@@ -2,8 +2,7 @@
 session_start();
 include ("connection.php");
 
-if(!empty($_POST['bugtitle']) && !empty($_POST['bugdescription'])
-    && !empty($_POST['dateposted']) )
+if(!empty($_POST['bugtitle']) && !empty($_POST['bugdescription']))
     {
         $bugtitle = mysqli_real_escape_string($db, $_POST['bugtitle']);
         $bugdescription = mysqli_real_escape_string($db, $_POST['bugdescription']);
@@ -20,7 +19,7 @@ if(!empty($_POST['bugtitle']) && !empty($_POST['bugdescription'])
         else
         {
             //echo $name." ".$email." ".$password;
-            $registerquery = mysqli_query($db, "INSERT INTO bugs (bugtitle, bugdescription, dateposted, userID)VALUES ('$bugtitle', '$bugdescription', '$dateposted', '$userID'") or die(mysqli_error($db));
+            $registerquery = mysqli_query($db, "INSERT INTO bugs (bugtitle, bugdescription, dateposted)VALUES ('$bugtitle', '$bugdescription', '$dateposted'") or die(mysqli_error($db));
             if($registerquery)
             {
 
