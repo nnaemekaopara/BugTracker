@@ -1,4 +1,5 @@
 <?php
+session_start();
 include ("connection.php");
  if(isset($_FILES['file'])) {
      $name = $_FILES['bug']['name'];
