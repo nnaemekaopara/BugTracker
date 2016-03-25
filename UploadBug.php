@@ -44,12 +44,6 @@
                 </tr>
 
                 <tr>
-                    <td>Date Posted:</td>
-                    <td><input id="dateposted" type="date"
-                               name="dateposted"value="Date Posted" /></td>
-                </tr>
-
-                <tr>
                     <td>Comments: </td>
                     <td><textarea id="comments" type="text"rows="5" cols="40"
                                   name="comment" placeholder="Comment Here"/></textarea></td>
