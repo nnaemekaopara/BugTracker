@@ -123,7 +123,7 @@ input[name="reset"],[name="submit"] {
 
 {
     width: 500px;
-    height: 320px;
+    height: 230px;
     border: 1px solid #bbb;
     background-color: lightgray;
     border-radius: 20px;
@@ -133,4 +133,16 @@ input[name="reset"],[name="submit"] {
 
 input#bugsubmit{
     border-radius: 8px;
+}
+
+#Bugloader
+
+{
+    width: 300px;
+    height: 100px;
+    border: 1px solid #bbb;
+    background-color: lightgray;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0 auto;
 }

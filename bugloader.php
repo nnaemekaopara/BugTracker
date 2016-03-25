@@ -1,36 +1,47 @@
-<?php
-session_start();
-include ("connection.php");
- if(isset($_FILES['file'])) {
-     $name = $_FILES['bug']['name'];
+ <html>
+    <head>
+         <meta charset="utf-8">
+         <title>Bugloader</title>
+         <link rel="stylesheet" href="css/design.css" type="text/css" />
+         <link rel="stylesheet" href="css/menu.css" type="text/css" />
+    </head>
 
-     $type = $_FILES['bug']['type'];
-     $allowed = array('php', 'txt','html');
+    <body>
+        <div id="Holder">
+            <div id="Header"></div>
+            <div id="NavBar">
+                <nav>
+                    <ul>
+                        <li><a href="logout.php">Log Out</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="Content">
+                <div id="PageHeading">
+                    <center><h1>Upload Here</h1></center>
+                </div>
+                <div id="ContentLeft">
+                    <div id="Contentbar">
+                        <nav>
+                            <ul>
+                                <li><a href="UploadBug.php">Restart Sequence</a></li>
+                                <li><a href="bugstatus.php">View Bugs</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-     $size = $_FILES['bug'][size];
-     $max_size = 2097152;
+        <form id="Bugloader" action="loadbug.php" method="post" enctype="multipart/form-data">
 
-     $tmp_name = $_FILES['bug']['tmp_name'];
+                Upload Bug:<input type="file" name="bug">
+            <br>
+            <center><input id ="bugsubmit" type="submit" name="btnSubmit" value="Submit"/></center>
+        </form>
+    </body>
 
-     if (isset($name)) {
-         if (!empty($name)) {
-
-             if (($extension == 'php' || $extension == 'html') && $size <= $max_size) {
-
-                 $location = 'bug/';
-
-                 if (move_uploaded_file($tmp_name, $location . $name)) {
-                     echo 'Uploaded!';
-                     header("Location:bugstatus.php");
-                 } else {
-                     echo 'There was an error.';
-                 }
-
-             } else {
-                 echo 'Please choose an appropriate file ext.';
-             }
-         }
-
-     }
- }
-?>
+    <footer>
+        <p>(c) 2016  </p>
+    </footer>
+ </html>

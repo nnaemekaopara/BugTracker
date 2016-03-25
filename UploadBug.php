@@ -2,7 +2,7 @@
  <html>
     <head>
         <meta charset="utf-8">
-        <title>ShutterBug</title>
+        <title>METCR Upload</title>
         <link rel="stylesheet" href="css/design.css" type="text/css" />
         <link rel="stylesheet" href="css/menu.css" type="text/css" />
     </head>
@@ -19,7 +19,7 @@
             </div>
             <div id="Content">
                 <div id="PageHeading">
-                    <center><h1>Upload Bug Here</h1></center>
+                    <center><h1>Bug Details</h1></center>
                 </div>
                 <div id="ContentLeft">
                     <h2></h2>
@@ -43,19 +43,13 @@
                     <td><textarea id="bugdescription" type="text" rows="6" cols="40"
                                   name="bugdescription" placeholder="Bug Description"/></textarea></td>
                 </tr>
-
-                <tr>
-                    <td>Upload Bug: </td>
-                    <td><input type="file" name="bug"></td>
-                </tr>
-
             </table>
             <br>
             <center><input id ="bugsubmit" type="submit" name="btnSubmit" value="Submit"/></center>
         </form>
    </body>
 
-   <footer>
-        <p>(c) 2016  </p>
-   </footer>
+    <footer>
+        <center><p> 2016 MCEv0.3 </p></center>
+    </footer>
  </html>

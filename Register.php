@@ -7,7 +7,7 @@ include("connection.php");
     <html>
         <head>
             <meta charset="utf-8">
-            <title>Sign Up</title>
+            <title>Register</title>
             <link rel="stylesheet" href="css/design.css" type="text/css" />
             <link rel="stylesheet" href="css/menu.css" type="text/css" />
         </head>
@@ -19,7 +19,6 @@ include("connection.php");
                     <nav>
                         <ul>
                             <li><a href="index.php">Login</a></li>
-                            <li><a href="#">Register</a></li>
                             <li><a href="Forgotpassword.php">Forgot Password</a></li>
                         </ul>
                     </nav>
@@ -51,8 +50,8 @@ include("connection.php");
                      </tr>
                  </table>
                 <h6>You already have an account?<a href="login.php">Click Here</a></h6>
-                <input type="reset" name="reset" value="Reset"/>
                 <input type="submit" name="submit" value="Sumbit" />
+                <input type="reset" name="reset" value="Reset"/>
              </form>
         </body>
         <footer>

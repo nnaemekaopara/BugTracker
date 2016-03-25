@@ -11,7 +11,7 @@ include("check.php");
     <html>
         <head>
             <meta charset="utf-8">
-            <title>Login</title>
+            <title>METCR</title>
             <link rel="stylesheet" href="css/design.css" type="text/css" />
             <link rel="stylesheet" href="css/menu.css" type="text/css" />
         </head>
@@ -46,4 +46,7 @@ include("check.php");
                 </div>
             </div>
         </body>
+        <footer>
+            <center><p> 2016 MCEv0.3 </p></center>
+        </footer>
     </html>

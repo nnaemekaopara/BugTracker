@@ -30,7 +30,7 @@ if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['message
  <html>
     <head>
         <meta charset="utf-8">
-        <title>Login</title>
+        <title>How can we Help</title>
         <link rel="stylesheet" href="css/design.css" type="text/css" />
         <link rel="stylesheet" href="css/menu.css" type="text/css" />
     </head>
@@ -56,7 +56,7 @@ if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['message
             </div>
         </div>
 
-        <form id="ForgPass" action="contactusend.php" method="post">
+        <form id="Sign" action="contactusend.php" method="post">
             <input  id = "username"  name="username" title="Username"
                     required type="text" placeholder="Username" />
             <input id = "email" name="email" required
