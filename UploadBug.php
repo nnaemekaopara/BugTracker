@@ -27,8 +27,7 @@
             </div>
         </div>
 
-        <form id="Bug" action="bugsubmit.php" method="post"
-              enctype="multipart/form-data" autocomplete="off ">
+        <form id="Bug" action="bugsubmit.php" method="post" autocomplete="off ">
 
             <table>
                 <tr>
