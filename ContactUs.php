@@ -41,24 +41,22 @@ if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['message
             <div id="NavBar">
                 <nav>
                     <ul>
-                        <li><a href="index.php">Login</a></li>
-                        <li><a href="SignUp.php">Register</a></li>
-                        <li><a href="#">Forgot Password</a></li>
+                        <li><a href="home.php">home</a></li>
+                        <li><a href="UploadBug.php">Upload Bug</a></li>
+                        <li><a href="logout.php">Logout</a></li>
                     </ul>
                 </nav>
             </div>
 
             <div id="Content">
                 <div id="PageHeading">
-                    <h1>Sorry About That</h1>
-                </div>
-                <div id="ContentLeft">
-                    <h2> Fill in your Details</h2>
+                   <center><h1>Hope your good</h1></center>
+                    <center><h2> Tell us</h2></center>
                 </div>
             </div>
         </div>
 
-        <form id="ForgPass" method="post">
+        <form id="ForgPass" action="contactusend.php" method="post">
             <input  id = "username"  name="username" title="Username"
                     required type="text" placeholder="Username" />
             <input id = "email" name="email" required

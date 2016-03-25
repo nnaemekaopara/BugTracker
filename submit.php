@@ -11,16 +11,26 @@ if(!empty($_POST['username']) && !empty($_POST['password'])
     $phone = mysqli_real_escape_string($db, $_POST['phone']);
 
     $sql=mysqli_query("SELECT email FROM users WHERE email='$email'");
-    $sql=mysqli_query("SELECT username FROM users WHERE username='$username'");
-    $result=mysqli_query($db,$sql);
-    if(mysqli_num_rows($result) == 1)
+    $sql1=mysqli_query("SELECT username FROM users WHERE username='$username'");
+    $result_email=mysqli_query($db,$sql);
+    $result_username=mysqli_query($db,$sql1);
+    if(mysqli_num_rows($result_email) == 1)
     {
+        header("location:Register.php");
         $echo = "Sorry...This email already exists...";
+
+    }
+    elseif(mysqli_num_rows($result_username)==1){
+        header("location:Register.php");
+        $echo = "Sorry...This username already exists...";
     }
     else
     {
         //echo $name." ".$email." ".$password;
-        $registerquery = mysqli_query($db, "INSERT INTO users (username, email, password, phone)VALUES ('$username', '$email', '$password', '$phone')")or die(mysqli_error($db));
+        $registerquery = mysqli_query($db,
+            "INSERT INTO users (username, email, password, phone, user_level,type)
+              VALUES ('$username', '$email', '$password', '$phone' '2','a')")
+              or die(mysqli_error($db));
         if($registerquery)
         {
             echo  "<p>Thank You! you are now registered.</p>";
