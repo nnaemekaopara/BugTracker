@@ -48,7 +48,6 @@ include("function.php");
                                 <ul>
                                     <li><a href="UploadBug.php">Upload Bug</a></li>
                                     <li><a href="bugstatus.php">View Bugs</a></li>
-                                    <li><a href="admin.php">Admin Panel</a></li>
                                 </ul>
                             </nav>
                         </div>
