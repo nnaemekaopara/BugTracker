@@ -1,5 +1,7 @@
 <?php
 include("check.php");
+
+include("function.php");
 ?>
 
 <style>
@@ -29,7 +31,7 @@ include("check.php");
                 </div>
                 <div id="Content">
                     <div id="PageHeading">
-                        <h1>Welcome <b><?php echo $username;?></b>[ <?php echo $level_name; ?> ]</h1>
+                        <h1>Welcome <b><?php echo $username;?></b>[ <?php echo $login_user; ?> ]</h1>
                     </div>
                     <div id="ContentLeft">
                         <p>
@@ -46,6 +48,7 @@ include("check.php");
                                 <ul>
                                     <li><a href="UploadBug.php">Upload Bug</a></li>
                                     <li><a href="bugstatus.php">View Bugs</a></li>
+                                    <li><a href="admin.php">Admin Panel</a></li>
                                 </ul>
                             </nav>
                         </div>
