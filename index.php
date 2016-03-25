@@ -5,11 +5,6 @@ if (isset($_SESSION['username']) )
     header('Location: home.php');
 }
 ?>
-<style>
-    form {background-image: url("images/bug.gif");
-
-    }
-</style>
 
 <!doctype html>
  <html>
@@ -53,6 +48,6 @@ if (isset($_SESSION['username']) )
          <div class="error"><?php echo $error;?></div>
      </body>
      <footer>
-         <p> 2016 Kimosabv.1 </p>
+         <center><p> 2016 MCEv0.3 </p></center>
      </footer>
  </html>

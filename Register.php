@@ -56,6 +56,6 @@ include("connection.php");
              </form>
         </body>
         <footer>
-            <p> 2016 Kimosabv.1 </p>
+            <center><p> 2016 MCEv0.3 </p></center>
         </footer>
     </html>

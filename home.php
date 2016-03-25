@@ -3,11 +3,6 @@ include("check.php");
 ?>
 
 <style>
-    body {
-        background-image: url("images/giphy.gif");
-        background-repeat:no-repeat;
-
-    }
 
 
 </style>
@@ -28,6 +23,7 @@ include("check.php");
                     <nav>
                         <ul>
                             <li><a href="logout.php">Logout</a></li>
+                            <li><a href="ContactUs.php">Contact Us</a></li>
                         </ul>
                     </nav>
                 </div>
