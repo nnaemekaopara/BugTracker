@@ -31,7 +31,7 @@ include("function.php");
                 </div>
                 <div id="Content">
                     <div id="PageHeading">
-                        <h1>Welcome <b><?php echo $username;?></b>[ <?php echo $login_user; ?> ]</h1>
+                        <h1>Welcome <b><?php echo $login_user;?></b>[ <?php echo $$user_level; ?> ]</h1>
                     </div>
                     <div id="ContentLeft">
                         <p>
