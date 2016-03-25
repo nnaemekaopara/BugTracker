@@ -1,6 +1,16 @@
 <?php
 include("check.php");
 ?>
+
+<style>
+    body {
+        background-image: url("images/giphy.gif");
+
+    }
+
+
+</style>
+
 <!doctype html>
     <html>
         <head>

@@ -6,9 +6,11 @@ if (isset($_SESSION['username']) )
 }
 ?>
 <style>
-    html {
-        background-image:url("images/bug.gif") ;
+    form {background-image: url("images/np.gif");
+
     }
+
+
 </style>
 
 <!doctype html>
