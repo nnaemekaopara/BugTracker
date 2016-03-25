@@ -19,7 +19,7 @@ if(!empty($_POST['bugtitle']) && !empty($_POST['bugdescription'])
         else
         {
             //echo $name." ".$email." ".$password;
-            $registerquery = mysqli_query($db, "INSERT INTO bugs (bugtitle, bugdescription, dateposted, datefixed, userID)VALUES ('$bugtitle', '$bugdescription', '$dateposted','$datefixed', '$userID')")
+            $registerquery = mysqli_query($db, "INSERT INTO bugs (bugtitle, bugdescription, dateposted, userID)VALUES ('$bugtitle', '$bugdescription', '$dateposted', '$userID')")
             or die(mysqli_error($db));
             if($registerquery)
             {
