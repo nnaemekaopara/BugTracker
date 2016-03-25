@@ -1,8 +1,11 @@
 <?php
-session_start();
-include("connection.php"); //Establishing connection with our database
+ // Start Session
+ session_start();
 
-  if(empty($_POST["username"]) || empty($_POST["password"]))
+ //Establishing connection with our database
+ include("connection.php");
+    //make sue both fields are not empty
+    if(empty($_POST["username"]) || empty($_POST["password"]))
         {
             $error = "Both fields are required.";
         } elseif(!empty($_POST['username']) && !empty($_POST['password']))
@@ -16,14 +19,23 @@ include("connection.php"); //Establishing connection with our database
             $result=mysqli_query($db,$sql);
 
             //If username and password exist in our database then create a session.
-            //Otherwise echo error.
+
 
             if(mysqli_num_rows($result) == 1)
-            {
-                $_SESSION['username'] = $username; // Initializing Session
-                header("location: home.php"); // Redirecting To Other Page
-            }else
-            {
+            {   $run = mysqli_fetch_array($result);
+                $user_id  =$run['userID'];
+                $type = $run['type'];
+                if($type == 'd'){
+                    echo "<p>Your account has been deactivated</p>";
+                } else {
+                     // Initializing Session
+                    $_SESSION['username'] = $username;
+                    $_SESSION['user_id'] = $user_id;
+                     // Redirecting To Other Page
+                     header("location: home.php");
+                }
+            }else{
+              //Otherwise redirect back to inder and echo error
                 header("location: index.php");
                 echo " <p>Incorrect username or password.</p>";
             }

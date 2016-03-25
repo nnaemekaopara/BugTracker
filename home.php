@@ -29,9 +29,18 @@ include("check.php");
                 </div>
                 <div id="Content">
                     <div id="PageHeading">
-                        <h1>Welcome <?php echo $login_user;?></h1>
+                        <h1>Welcome <b><?php echo $username;?></b>[ <?php echo $level_name; ?> ]</h1>
                     </div>
                     <div id="ContentLeft">
+                        <p>
+                            <?php
+                            if($user_level == 1) {
+                                echo "<a href='admin.php'>Admin Pannel</a>";
+                            }
+
+
+                            ?>
+                        </p>
                         <div id="Contentbar">
                             <nav>
                                 <ul>
