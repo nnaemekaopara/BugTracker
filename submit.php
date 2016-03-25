@@ -16,10 +16,11 @@ if(!empty($_POST['username']) && !empty($_POST['password'])
    // $result_username=mysqli_query($db,$sql1);
     if(mysqli_fetch_assoc($result_email) == 1)
     {
+
+        header("Location:Register.php");
+        $echo = "Sorry...This email already exists...";
         $email = $result_email['email'];
         echo $email;
-        header("location:Register.php");
-        $echo = "Sorry...This email already exists...";
 
     }
     //elseif(mysqli_num_rows($result_username)==1){
