@@ -10,7 +10,7 @@ if(!empty($_POST['username']) && !empty($_POST['password'])
     $password = md5(mysqli_real_escape_string($db, $_POST['password']));
     $phone = mysqli_real_escape_string($db, $_POST['phone']);
 
-    $sql=mysqli_query("SELECT email FROM users WHERE email='$email'");
+    $sql=mysqli_query("SELECT email FROM users WHERE email= $email");
    // $sql1=mysqli_query("SELECT username FROM users WHERE username='$username'");
     $result_email=mysqli_query($db,$sql);
    // $result_username=mysqli_query($db,$sql1);
