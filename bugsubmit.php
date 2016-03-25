@@ -8,7 +8,7 @@ if(!empty($_POST['bugtitle']) && !empty($_POST['bugdescription'])
         $bugtitle = mysqli_real_escape_string($db, $_POST['bugtitle']);
         $bugdescription = mysqli_real_escape_string($db, $_POST['bugdescription']);
         $datefixed = mysqli_real_escape_string($db, $_POST['fixed']);
-        $dateposted = date('d-m-Y');
+        $dateposted = date('Y-m-d');
 
         $sql=mysqli_query("SELECT bugtitle FROM bugs WHERE bugtitle='$bugtitle'");
         $result=mysqli_query($db,$sql);
