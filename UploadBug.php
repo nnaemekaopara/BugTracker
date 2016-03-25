@@ -45,11 +45,6 @@
                 </tr>
 
                 <tr>
-                    <td>Comments: </td>
-                    <td><textarea id="comments" type="text"rows="5" cols="40"
-                                  name="comment" placeholder="Comment Here"/></textarea></td>
-                </tr>
-                <tr>
                     <td>Upload Bug: </td>
                     <td><input type="file" name="bug"></td>
                 </tr>
@@ -61,6 +56,6 @@
    </body>
 
    <footer>
-       <center><p> 2016 MCEv0.3 </p></center>
+        <p>(c) 2016  </p>
    </footer>
  </html>

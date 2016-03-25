@@ -8,11 +8,10 @@ if(!empty($_POST['bugtitle']) && !empty($_POST['bugdescription'])
         $bugtitle = mysqli_real_escape_string($db, $_POST['bugtitle']);
         $bugdescription = mysqli_real_escape_string($db, $_POST['bugdescription']);
         $dateposted = date('Y-m-d');
-        $datefixed = date_date_set('Y-m-d');
 
-        $sql=mysqli_query("SELECT bugtitle FROM bugs WHERE bugtitle='$bugtitle'");
-        $result=mysqli_query($db,$sql);
-        if(mysqli_num_rows($result) == 1)
+        $sql="SELECT bugtitle FROM bugs WHERE bugtitle='$bugtitle'";
+        $result_bug=mysqli_query($db,$sql);
+        if(mysqli_num_rows($result_bug) == 1)
         {
             $echo = "Sorry...This bugtitle already exists...";
         }
@@ -20,9 +19,7 @@ if(!empty($_POST['bugtitle']) && !empty($_POST['bugdescription'])
         else
         {
             //echo $name." ".$email." ".$password;
-            $registerquery = mysqli_query($db, "INSERT INTO bugs (bugtitle, bugdescription, dateposted, datefixed, userID)
-                                VALUES ('$bugtitle', '$bugdescription', '$dateposted','$datefixed' '$userID')")
-            or die(mysqli_error($db));
+            $registerquery = mysqli_query($db, "INSERT INTO bugs (bugtitle, bugdescription, dateposted, userID)VALUES ('$bugtitle', '$bugdescription', '$dateposted', '$userID'") or die(mysqli_error($db));
             if($registerquery)
             {
                 echo  "<p>\Bug Uploaded</p>";
