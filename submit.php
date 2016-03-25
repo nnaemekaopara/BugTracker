@@ -31,9 +31,10 @@ if(!empty($_POST['username']) && !empty($_POST['password'])
             "INSERT INTO users (username, email, password, phone, user_level,type) VALUES ('$username', '$email', '$password', '$phone', '2','a')") or die(mysqli_error($db));
         if($registerquery)
         {
-            echo  "<p>Thank You! you are now registered.</p>";
+
             $_SESSION['username'] = $username;
             header("Location:home.php");
+            echo  "<p>Thank You! you are now registered.</p>";
         }
         else
         {
