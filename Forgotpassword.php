@@ -26,6 +26,11 @@ if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['confmes
     }
 }
 ?>
+<style>
+    form {background-image: url("images/np.gif");
+    }
+</style>
+
 <!doctype html>
     <html>
         <head>

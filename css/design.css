@@ -1,10 +1,13 @@
 html{
     background-color: transparent;
     background-image:url("../images/bug.gif") ;
+    background-repeat: no-repeat;
 }
 body {
     margin:0;
     padding:0;
+    background-image: url("../images/vec.jpg");
+    background-repeat: no-repeat;
 
 
 }/* CSS Document */

@@ -5,6 +5,7 @@ include("check.php");
 <style>
     body {
         background-image: url("images/giphy.gif");
+        background-repeat:no-repeat;
 
     }
 
