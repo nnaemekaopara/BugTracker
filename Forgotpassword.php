@@ -47,8 +47,7 @@ if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['confmes
                     <nav>
                         <ul>
                             <li><a href="index.php">Login</a></li>
-                            <li><a href="#">Register</a></li>
-                            <li><a href="#">Forgot Password</a></li>
+                            <li><a href="Register.php">Register</a></li>
                         </ul>
                     </nav>
                 </div>

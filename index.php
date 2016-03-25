@@ -6,7 +6,7 @@ if (isset($_SESSION['username']) )
 }
 ?>
 <style>
-    form {background-image: url("images/giphy.gif");
+    form {background-image: url("images/bug.gif");
 
     }
 </style>
@@ -52,4 +52,7 @@ if (isset($_SESSION['username']) )
          </form>
          <div class="error"><?php echo $error;?></div>
      </body>
+     <footer>
+         <p> 2016 Kimosabv.1 </p>
+     </footer>
  </html>

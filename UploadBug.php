@@ -61,6 +61,6 @@
    </body>
 
    <footer>
-        <p>(c) 2016 MCE </p>
+        <p> 2016 Kimosabv.1 </p>
    </footer>
  </html>

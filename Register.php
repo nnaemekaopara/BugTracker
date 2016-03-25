@@ -55,4 +55,7 @@ include("connection.php");
                 <input type="submit" name="submit" value="Sumbit" />
              </form>
         </body>
+        <footer>
+            <p> 2016 Kimosabv.1 </p>
+        </footer>
     </html>

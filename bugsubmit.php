@@ -8,6 +8,7 @@ if(!empty($_POST['bugtitle']) && !empty($_POST['bugdescription'])
         $bugtitle = mysqli_real_escape_string($db, $_POST['bugtitle']);
         $bugdescription = mysqli_real_escape_string($db, $_POST['bugdescription']);
         $dateposted = date('Y-m-d');
+        $datefixed = date_date_set('Y-m-d');
 
         $sql=mysqli_query("SELECT bugtitle FROM bugs WHERE bugtitle='$bugtitle'");
         $result=mysqli_query($db,$sql);
@@ -19,7 +20,7 @@ if(!empty($_POST['bugtitle']) && !empty($_POST['bugdescription'])
         else
         {
             //echo $name." ".$email." ".$password;
-            $registerquery = mysqli_query($db, "INSERT INTO bugs (bugtitle, bugdescription, dateposted, userID)VALUES ('$bugtitle', '$bugdescription', '$dateposted', '$userID')")
+            $registerquery = mysqli_query($db, "INSERT INTO bugs (bugtitle, bugdescription, dateposted, datefixed, userID)VALUES ('$bugtitle', '$bugdescription', '$dateposted','$datefixed' '$userID')")
             or die(mysqli_error($db));
             if($registerquery)
             {
